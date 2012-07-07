@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'scripture'
+
+class ScriptureCli < Thor
+  desc "lookup 'verse'", "Lookup the given verse and print it to the screen"
+  def lookup(verse)
+    puts Scripture.get_verse(verse)
+  end
+end
+
+ScriptureCli.start

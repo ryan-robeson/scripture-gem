@@ -1,0 +1,5 @@
+require 'scripture/version'
+require 'httparty'
+require 'thor'
+require 'scripture/bible_providers/preaching_central'
+require 'scripture/actions'
